@@ -18,8 +18,7 @@ def solution(bishops):
 			if dy_dn >= 0:
 				chess_map[dy_dn][x] = 0
 			dx -= 1
-            
-        dx = x + 1
+		dx = x + 1
 		dy_up = y
 		dy_dn = y
 		while dx < 8:
@@ -34,3 +33,4 @@ def solution(bishops):
 		answer += i.count(1)
 
 	return answer
+			

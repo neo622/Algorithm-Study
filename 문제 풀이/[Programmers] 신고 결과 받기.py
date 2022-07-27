@@ -1,3 +1,5 @@
+# level 1
+
 def solution(id_list, report, k):
     answer = []
     answer_board = [[0, i] for i in id_list]
