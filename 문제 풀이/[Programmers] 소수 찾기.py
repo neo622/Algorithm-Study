@@ -6,6 +6,7 @@ from itertools import permutations
 
 def solution(numbers):
     count = 0
+    # 문자열을 슬라이싱하여 리스트화
     num_list = [i for i in numbers]
     dp = []
     # 모든 조합 리스트 생성
