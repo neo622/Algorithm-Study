@@ -9,13 +9,13 @@ def solution(rock, people):
     name = [p[0] for p in people]
     for i in people:
         rock_idx = 0
-        while rock_idx < len(rock)-1:
-            rock_idx += (int(i[1]))
+        while rock_idx < len(rock):
+            rock_idx += (int(i[1]))-1
             rock[rock_idx] -= int(i[2])
             if rock[rock_idx] < 0:
                 name[name.index(i[0])] = "fail"
                 break
 
-    return [i for i in name if i != "fail"]
+    return rock
 
 
